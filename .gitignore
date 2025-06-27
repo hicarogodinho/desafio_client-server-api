@@ -1,0 +1,3 @@
+# Ignorar banco de dados e binários
+cotacoes.db
+server
