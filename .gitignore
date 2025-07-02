@@ -1,3 +1,4 @@
 # Ignorar banco de dados e binários
-cotacoes.db
-server
+/server/cotacoes.db
+/server/server
+/client/client

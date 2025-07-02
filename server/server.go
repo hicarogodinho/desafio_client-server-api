@@ -96,15 +96,3 @@ func salvarCotacaoNoBD(ctx context.Context, db *sql.DB, bid string) error {
 	_, err = stmt.ExecContext(ctxBD, bid)
 	return err
 }
-
-// select {
-// case <-time.After(100 * time.Millisecond): // Simula processamento de 100ms}
-// 	w.Header().Set("Content-Type", "application/json")
-// 	w.WriteHeader(http.StatusOK)
-// 	w.Write([]byte(`{"mensagem": "Endpoint /cotacao funcionando!"}`))
-// // case <-time.After(300 * time.Millisecond): // Simula uma operação lenta
-// // 	w.Write(([]byte(`{"mensagem": "Erro: operação demorou mais que o esperado"}`)))
-// case <-ctx.Done():
-// 	http.Error(w, "Tempo limite excedido", http.StatusGatewayTimeout)
-// 	fmt.Println("Erro: context cancelado ou timeout atingido")
-// }
